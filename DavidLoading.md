@@ -1,5 +1,7 @@
 # DavidLoading
 
+# 프로젝트 진행 전 
+
 링크: [https://www.youtube.com/shorts/gr3FbgfUhns](https://www.youtube.com/shorts/gr3FbgfUhns)
 
 1. 상자와 조각상 오브젝트 생성
@@ -42,3 +44,20 @@
 유튜브 영상 음원 파일로 변환 사이트
 
 [https://320ytmp3.com/ko8/download?type=ytmp3&url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2Fgr3FbgfUhns](https://320ytmp3.com/ko8/download?type=ytmp3&url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2Fgr3FbgfUhns)
+---
+
+# 프로젝트 진행 후
+
+## 곡선 애니메이션 적용
+
+상자가 45도에서 90도로 회전되면서 조각상이 내려오는 과정에서 어색함이 있었다. 이유를 찾아보니 조각상이 내려올 때 곡선을 그리며 내려오기 때문에 곡선을 그리고 조각상을 path에 맞게 이동하도록 했다.
+
+## 여러 디바이스 적용
+
+ipad Pro와 iphone 13 Pro의 화면에 맞게 조각상과 상자가 조절되고 해당 사이즈에 맞게 애니메이션을 진행하기 위해서 상자와 조각상의 가로길이,대각선 길이를 기준으로 조각상이 이동해야할 거리를 비율로 계산해 적용했다.
+
+## 해결하지 못한 부분
+
+상자의 회전에 따라 조각상의 회전이 달라져 여러 애니메이션을 붙이는 형식으로 개발했다. 여러 애니메이션을 붙이는 과정에서 매끄럽게 연결하는 방법을 아직 찾지 못했다.
+
+조각상을 움직임과 함께 음악을 재생하는 과정에서 약 7초의 시간에 맞게 애니메이션이 진행되어야 하는데 이 시간에 맞게끔 비율을 조정하고 애니메이션을 진행하는데 어려움이 있어서 우선 제외했다.
